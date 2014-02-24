@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="494" customClass="AppDelegate">
+            <connections>
+                <outlet property="hyphenlessMenuItem" destination="xMP-gJ-oUX" id="Qa0-X0-tQm"/>
+                <outlet property="lowercaseMenuItem" destination="uv6-He-sfu" id="AWZ-vy-cCo"/>
+                <outlet property="menu" destination="oKU-lg-46c" id="QUC-zy-q1z"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <menu id="oKU-lg-46c">
+            <items>
+                <menuItem title="Copy UUID" id="W8U-53-0tp">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="copy:" target="494" id="ZKt-ou-hnq"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="xwa-h7-MZF"/>
+                <menuItem title="Lower-case characters" id="uv6-He-sfu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleCase:" target="494" id="8Xr-8B-rzy"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Remove hyphens" id="xMP-gJ-oUX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleHyphens:" target="494" id="D8W-BT-UgL"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="QH0-jg-23P"/>
+                <menuItem title="Quit" id="Kfo-lX-Z4L">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="494" id="Ryu-fF-J6w"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
