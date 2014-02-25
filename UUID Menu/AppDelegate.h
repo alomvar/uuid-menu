@@ -11,11 +11,8 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
     IBOutlet NSMenu *menu;
-    @private NSString *processedUUID;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-
 @property (weak) IBOutlet NSMenuItem *lowercaseMenuItem;
-@property (strong) IBOutlet NSMenuItem *hyphenlessMenuItem;
+@property (weak) IBOutlet NSMenuItem *hyphenlessMenuItem;
 @end

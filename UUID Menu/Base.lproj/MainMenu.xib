@@ -21,7 +21,7 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="oKU-lg-46c">
             <items>
-                <menuItem title="Copy UUID" id="W8U-53-0tp">
+                <menuItem title="Copy a new UUID to clipboard" id="W8U-53-0tp">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="copy:" target="494" id="ZKt-ou-hnq"/>
