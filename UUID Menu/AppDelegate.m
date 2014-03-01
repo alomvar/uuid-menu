@@ -9,6 +9,10 @@
 
 @implementation AppDelegate
 
+#define userInfoKeyUUID @"uuid"
+#define preferenceKeyHyphenless @"Hyphenless"
+#define preferenceKeyLowercase @"Lowercase"
+
 - (NSString*)GenerateUUIDString
 {
     CFUUIDRef theUUID = CFUUIDCreate(NULL);
@@ -36,6 +40,22 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:preferenceKeyHyphenless] == true)
+    {
+        [[self hyphenlessMenuItem] setState:true];
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:preferenceKeyLowercase] == true)
+    {
+        [[self lowercaseMenuItem] setState:true];
+    }
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+    [[NSUserDefaults standardUserDefaults] setBool:[[self hyphenlessMenuItem] state] forKey:preferenceKeyHyphenless];
+    [[NSUserDefaults standardUserDefaults] setBool:[[self lowercaseMenuItem] state] forKey:preferenceKeyLowercase];
 }
 
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
@@ -46,7 +66,7 @@
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification
 {
     NSDictionary *userinfo = [notification userInfo];
-    NSString *uuid = [userinfo objectForKey:@"uuid"];
+    NSString *uuid = [userinfo objectForKey:userInfoKeyUUID];
     
     if (uuid != (id)[NSNull null])
     {
@@ -58,19 +78,19 @@
 {
     NSString *uuid = [self GenerateUUIDString];
     
-    if ([self.hyphenlessMenuItem state] == NSOnState)
+    if ([[self hyphenlessMenuItem] state] == NSOnState)
     {
         uuid = [uuid stringByReplacingOccurrencesOfString:@"-" withString:@""];
     }
     
-    if ([self.lowercaseMenuItem state] == NSOnState)
+    if ([[self lowercaseMenuItem] state] == NSOnState)
     {
         uuid = [uuid lowercaseString];
     }
     
     [self copyUUID:uuid];
 
-    NSArray *notificationInfoKeys = [[NSArray alloc] initWithObjects:@"uuid", nil];
+    NSArray *notificationInfoKeys = [[NSArray alloc] initWithObjects:userInfoKeyUUID, nil];
     NSArray *notificationInfoObjects = [[NSArray alloc] initWithObjects:uuid, nil];
     NSDictionary *notificationInfo = [[NSDictionary alloc] initWithObjects:notificationInfoObjects forKeys:notificationInfoKeys];
     
