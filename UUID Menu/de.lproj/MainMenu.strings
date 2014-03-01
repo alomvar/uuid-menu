@@ -1,0 +1,12 @@
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "Kfo-lX-Z4L"; */
+"Kfo-lX-Z4L.title" = "Beenden";
+
+/* Class = "NSMenuItem"; title = "Copy a new UUID to clipboard"; ObjectID = "W8U-53-0tp"; */
+"W8U-53-0tp.title" = "Eine neue UUID in die Zwischenablage kopieren";
+
+/* Class = "NSMenuItem"; title = "Lower-case characters"; ObjectID = "uv6-He-sfu"; */
+"uv6-He-sfu.title" = "Kleingeschriebene Buchstaben";
+
+/* Class = "NSMenuItem"; title = "Remove hyphens"; ObjectID = "xMP-gJ-oUX"; */
+"xMP-gJ-oUX.title" = "Bindestriche entfernen";

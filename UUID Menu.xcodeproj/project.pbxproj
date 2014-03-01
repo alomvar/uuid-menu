@@ -33,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		D057153D18BBCA88004F1BEA /* UUID Menu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "UUID Menu.entitlements"; sourceTree = "<group>"; };
+		D060D62218C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		D060D62318C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D060D62418C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D060D62518C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0D1726D188AB68A004F94C6 /* UUID Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UUID Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D17270188AB68A004F94C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D0D17273188AB68A004F94C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -225,6 +229,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = D0D17264188AB68A004F94C6;
 			productRefGroup = D0D1726E188AB68A004F94C6 /* Products */;
@@ -293,6 +298,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0D1727A188AB68A004F94C6 /* en */,
+				D060D62318C2509F0008F365 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0D17280188AB68A004F94C6 /* en */,
+				D060D62418C2509F0008F365 /* de */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0D17286188AB68A004F94C6 /* Base */,
+				D060D62218C2509F0008F365 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0D17298188AB68A004F94C6 /* en */,
+				D060D62518C2509F0008F365 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
