@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D090955F18CC98DA000A8066 /* Menu Bar Tag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D090955E18CC98DA000A8066 /* Menu Bar Tag.pdf */; };
 		D0D17271188AB68A004F94C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D17270188AB68A004F94C6 /* Cocoa.framework */; };
 		D0D1727B188AB68A004F94C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D17279188AB68A004F94C6 /* InfoPlist.strings */; };
 		D0D1727D188AB68A004F94C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D1727C188AB68A004F94C6 /* main.m */; };
@@ -18,7 +19,6 @@
 		D0D17291188AB68A004F94C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D17270188AB68A004F94C6 /* Cocoa.framework */; };
 		D0D17299188AB68A004F94C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D17297188AB68A004F94C6 /* InfoPlist.strings */; };
 		D0D1729B188AB68A004F94C6 /* UUID_MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D1729A188AB68A004F94C6 /* UUID_MenuTests.m */; };
-		D0D172A5188AC3CB004F94C6 /* key2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D172A4188AC3CB004F94C6 /* key2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 		D060D62318C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D060D62418C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D060D62518C2509F0008F365 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D090955E18CC98DA000A8066 /* Menu Bar Tag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Menu Bar Tag.pdf"; sourceTree = "<group>"; };
 		D0D1726D188AB68A004F94C6 /* UUID Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UUID Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D17270188AB68A004F94C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D0D17273188AB68A004F94C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -56,7 +57,6 @@
 		D0D17296188AB68A004F94C6 /* UUID MenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UUID MenuTests-Info.plist"; sourceTree = "<group>"; };
 		D0D17298188AB68A004F94C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0D1729A188AB68A004F94C6 /* UUID_MenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUID_MenuTests.m; sourceTree = "<group>"; };
-		D0D172A4188AC3CB004F94C6 /* key2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 		D0D17277188AB68A004F94C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0D172A4188AC3CB004F94C6 /* key2.png */,
+				D090955E18CC98DA000A8066 /* Menu Bar Tag.pdf */,
 				D0D17278188AB68A004F94C6 /* UUID Menu-Info.plist */,
 				D0D17279188AB68A004F94C6 /* InfoPlist.strings */,
 				D0D1727C188AB68A004F94C6 /* main.m */,
@@ -248,9 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D1727B188AB68A004F94C6 /* InfoPlist.strings in Resources */,
-				D0D172A5188AC3CB004F94C6 /* key2.png in Resources */,
 				D0D17289188AB68A004F94C6 /* Images.xcassets in Resources */,
 				D0D17281188AB68A004F94C6 /* Credits.rtf in Resources */,
+				D090955F18CC98DA000A8066 /* Menu Bar Tag.pdf in Resources */,
 				D0D17287188AB68A004F94C6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

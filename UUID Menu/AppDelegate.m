@@ -34,7 +34,7 @@
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:menu];
     [statusItem setHighlightMode:YES];
-    [statusItem setImage:[NSImage imageNamed:@"key2"]];
+    [statusItem setImage:[NSImage imageNamed:@"Menu Bar Tag"]];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
