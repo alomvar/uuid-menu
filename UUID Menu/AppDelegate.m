@@ -32,9 +32,11 @@
 - (void)awakeFromNib
 {
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    NSImage *image = [NSImage imageNamed:@"Menu Bar Tag"];
     [statusItem setMenu:menu];
     [statusItem setHighlightMode:YES];
-    [statusItem setImage:[NSImage imageNamed:@"Menu Bar Tag"]];
+    [image setTemplate:YES];
+    [statusItem setImage:image];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
