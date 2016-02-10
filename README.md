@@ -10,11 +10,13 @@ Whenever you might feel the itch to get a unique identifier to copy in paste in 
 
 # Installation
 
-Currently you have to build it by yourself with Xcode. As there is no fancy magic inside it should work without problems.
+Currently you have to build it by yourself with Xcode. As there is no fancy magic inside it should work without problems. Providing a download of the prebuilt map [is planned](https://github.com/alomvar/uuid-menu/issues/1).
 
 # Usage
 
-As usual with Mac apps you just open it. A menu icon will be added with which you control the app. The app does automatically start on login but it can easily be added to your login items in OS X user preferences.
+As usual with Mac apps you just open it. A menu icon will be added with which you control the app.
+
+The app does automatically start on login but it can easily be added to your login items in OS X user preferences. Displaying notifications can be controlled via OS X notifications preferences, too.
 
 # Contribution
 
